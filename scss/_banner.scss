@@ -1,0 +1,105 @@
+body {
+    #banner {
+        padding: 150px 0px 100px 0px;
+        margin: 0 auto;
+        width: 60%;
+        .heading-box {
+            width: 100%;
+            margin-bottom: 80px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            .title-block{
+                overflow: hidden;
+            }
+
+            .title-box, .title-box_two, .title-box_three{
+                transform: translateY(200px);
+                margin-bottom: 8px;
+            }
+
+            h1 {
+                text-align: center;
+                margin-bottom: 0;
+                margin: 0 auto;
+                font-family: $font-family-ohno;
+                color: $red-color-dark;
+                font-size: $font-size-h1;
+                line-height: 60px;
+                font-weight: bold;
+                max-width: 800px;
+
+                @media screen and (max-width: 991px) {
+                    font-size: 60px;
+                    line-height: 50px;
+                  }
+
+            }
+
+            .color{
+                color: $font-color-dark;
+            }
+
+            .paragraph-block{
+                overflow: hidden;
+                .paragraph-box{
+                    transform: translateY(100px);
+                }
+            }
+
+            p {
+                margin-bottom: 0;
+                margin-top: 20px;
+                max-width: 400px;
+                text-align: center;
+                color: $font-color-dark;
+                font-family: $font-family-nova;
+                font-size: $font-size-p;
+            }
+        }
+
+        a:hover{
+            text-decoration: none;
+            list-style-type: none;
+        }
+
+        .button-box{
+            overflow: hidden;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            border-radius: 6px;
+        }
+
+        .cta-box {
+            transform: translateY(100px);
+
+
+                .heading-button {
+                    border: none;
+                    padding: 6px 14px;
+                    color: $font-color-white;
+                    background-color: $red-color-dark;
+                    font-weight: bold;
+                    font-size: $font-size-h3;
+                    font-family: $font-family-ohno;
+                    text-align: center;
+                    border-radius: 6px;
+                    cursor: pointer;
+                }
+
+                .heading-button:hover {
+                    background-color: #843b3b;
+                    
+                  }
+            }
+
+            @media screen and (max-width: 767px) {
+                width: 80%;
+              }
+            @media screen and (max-width: 1300px) {
+                width: 70%;
+              }
+    }
+}

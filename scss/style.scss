@@ -1,0 +1,52 @@
+//fonts
+$font-family-fino: "fino", serif;
+$font-family-nova: "proxima-nova", sans-serif;
+$font-family-ohno: "articulat-cf", sans-serif;
+
+//font-sizes
+$font-size-h1: 70px;
+$font-size-h2: 34px;
+$font-size-h3: 21px;
+$font-size-p: 16px;
+$font-size-nav: 21px;
+//letter spacing
+$sub-title-spacing: 5px;
+
+//font color
+$font-color-dark: #2f2f2f;
+$font-color-white: #ffffff;
+
+//block colors
+$red-color-dark: #6e3333;
+$red-color-light: #8b3f3f;
+$gray-color: #f4f4f4;
+$white-color: #ffffff;
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.space{
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 767px) {
+    .mobile-space {margin-bottom:30px;}
+    }
+@media screen and (max-width: 767px) {
+    .mobile-nav {flex-direction: column;}
+    }
+
+
+@import "_header";
+@import "_banner";
+@import "_cases";
+@import "_skills";
+@import "_footer";
+@import "_mywork";
+@import "_contact";

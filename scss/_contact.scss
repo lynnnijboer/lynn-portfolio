@@ -1,0 +1,100 @@
+body {
+    #contact {
+        padding: 150px 0px 0px 0px;
+        margin: 0 auto;
+        width: 60%;
+
+        
+        h2 {
+            font-family: $font-family-ohno;
+            font-size: $font-size-h2;
+            color: $font-color-dark;
+            margin-bottom: 30px;
+            font-weight: 900;
+        }
+
+        .formbold-mb-5 {
+            margin-bottom: 20px;
+          }
+          .formbold-pt-3 {
+            padding-top: 12px;
+          }
+          .formbold-main-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        
+          .formbold-form-wrapper {
+            margin: 0 auto;
+            width: 100%;
+            background: white;
+          }
+          .formbold-form-label {
+            display: block;
+            font-size: $font-size-p;
+            font-family: $font-family-nova;
+            color: $font-color-dark;
+            font-weight: bold;
+            font-family: $font-family-nova;
+            margin-bottom: 5px;
+          }
+          .formbold-form-label-2 {
+            font-weight: 600;
+            font-size: 20px;
+            margin-bottom: 20px;
+          }
+        
+          .formbold-form-input {
+            width: 100%;
+            padding: 12px 24px;
+            font-family: $font-family-nova;
+            border-radius: 6px;
+            border: 1px solid #e0e0e0;
+            background: white;
+            font-weight: 500;
+            font-size: 16px;
+            color: #6b7280;
+            outline: none;
+            resize: none;
+          }
+          .formbold-form-input:focus {
+            border-color: $font-color-dark;;
+          }
+        
+          .formbold-btn {
+            border: none;
+            padding: 8px 12px;
+            color: $font-color-white;
+            background-color: $red-color-dark;
+            font-weight: bold;
+            font-size: $font-size-p;
+            font-family: $font-family-ohno;
+            text-align: center;
+            border-radius: 6px;
+            cursor: pointer;
+          }
+          .formbold-btn:hover {
+            background-color: #843b3b;
+          }
+        
+        
+          .formbold--mx-3 {
+            margin-left: -12px;
+            margin-right: -12px;
+          }
+          .formbold-px-3 {
+            padding-left: 12px;
+            padding-right: 12px;
+          }
+
+          @media screen and (max-width: 1300px) {
+            width: 70%;
+          }
+       
+        @media screen and (max-width: 767px) {
+            width: 80%;
+          }
+      
+    }
+}

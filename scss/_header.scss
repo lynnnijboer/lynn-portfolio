@@ -1,0 +1,102 @@
+body {
+    header {
+        right: 0;
+        top: 0px;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+
+        .navbar{
+            @media screen and (min-width: 320px) and (max-width: 767px) {
+                align-items:flex-start;
+              }
+        }
+    
+        nav {
+            background-color: transparent;
+            display: flex;
+            justify-content: space-between;
+            transition: ease-in-out 0.5s;
+            .logo{
+                display: flex;
+                align-items: center;
+                list-style-type: none;
+
+                    a {
+                        padding: 10px 20px;
+                        text-decoration: none;
+                        font-size: $font-size-nav;
+                        color: #2f2f2f;
+                        font-family: $font-family-nova;
+                        font-weight: bold;
+                    }
+
+                    @media screen and (min-width: 320px) and (max-width: 767px) {
+                        display: none;
+                      }
+            }
+
+            &.navbar--closed {
+                opacity: 0;
+                transform: translateY(-100%);
+                transition: ease-in-out 0.5s;
+            }
+
+            ul {
+                list-style-type: none;
+                padding: 0 20px;
+                justify-content: right;
+                display: flex;
+                li {
+                    display: inline-flex;
+                    padding: 10px 20px;
+                    a {
+                        text-decoration: none;
+                        font-size: $font-size-nav;
+                        color: #2f2f2f;
+                        font-family: $font-family-nova;
+                        font-weight: bold;
+
+                        @media screen and (min-width: 320px) and (max-width: 767px) {
+                            color: white;
+                          }
+                    }
+
+                    a:hover{
+                        color: #2f2f2f;
+                        text-decoration: none;
+                    }
+                }
+
+                li > a::after {
+                    display:block;
+                    content: '';
+                    border-bottom: solid 2px #000;  
+                    transform: scaleX(0);  
+                    transition: transform 250ms ease-in-out;
+                    transform-origin:100% 50%;
+                    margin-top: -5px;
+                    
+                  }
+                  
+                  li > a:hover::after, li > a.active-nav::after {
+                    transform: scaleX(1);
+                    transform-origin:0 50%;
+                  
+            }
+
+            @media screen and (min-width: 320px) and (max-width: 767px) {
+                padding: 30px;
+              }
+        }
+
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+            z-index: 1000;
+            height: 100vh;
+            background-color: $red-color-dark;
+            display: none;
+          }
+    }
+
+}   
+}

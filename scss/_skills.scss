@@ -1,0 +1,74 @@
+body {
+    #skills {
+        padding: 100px 0px;
+        margin: 0 auto;
+        width: 60%;
+
+        
+        h2 {
+            font-family: $font-family-ohno;
+            font-size: $font-size-h2;
+            color: $font-color-dark;
+            font-weight: 900;
+            padding-left: 0;
+
+        }
+
+
+            
+            .skills-box {
+            display: flex;
+            margin-top: 30px;
+            flex-direction: column;
+            gap: 40px;
+            width: 100%;
+            
+                .skills-text_box {
+                    flex-direction: row;
+                    display: flex;
+                    padding-right: 0;
+
+                        
+                        .skills-title_box{
+                            flex-direction: column;
+                            display: flex;
+                            padding-left: 0;
+
+
+                                p{
+                                    opacity: 50%;
+                                }
+                        }
+
+                        h3 {
+                            font-size: $font-size-h3;
+                            margin: 0;
+                            color: $font-color-dark;
+                            font-family: $font-family-nova;
+                            font-weight: bold;
+                        }
+                        p {
+                            margin: 0;
+                            color: $font-color-dark;
+                            font-family: $font-family-nova;
+                            font-size: $font-size-p;
+                        }
+
+                        @media screen and (max-width: 767px) {
+                            flex-direction: column;
+                        }
+                }
+            
+            
+    }
+       
+
+        @media screen and (max-width: 1300px) {
+            width: 70%;
+          }
+        @media screen and (max-width: 767px) {
+            width: 80%;
+          }
+       
+    }
+}
