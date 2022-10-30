@@ -95,21 +95,20 @@ caseSlider.forEach((cases) => {
         trigger: cases,
         start: "center center",
         end: "bottom center",
-        scrub: true,
-        markers: true
+        scrub: true
       },
     })
     .to(slider, {
-      x: "-127vw"
+      x: "-130vw"
     })
 
   gsap.timeline({
       scrollTrigger: {
         trigger: cases,
-        start: "-20%",
+        start: "top",
         end: "+=350",
-        pin: true,
-      },
+        pin: true
+        },
     })
 
 });
