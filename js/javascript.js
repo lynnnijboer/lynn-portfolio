@@ -11,6 +11,16 @@ window.onscroll = function() {
   prevScrollpos = currentScrollPos;
 }
 
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+
 let title = document.querySelector(".title-box");
   gsap.to(title, { y: 0,
   duration: 1
